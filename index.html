@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KATIK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar">
+    <h1>Kalkulator Tematik</h1>
+</header>
+<main class="main-content">
+    <section id="home-section">
+      <h2>Selamat Datang di Beranda KATIK (Kalkulator Tematik)</h2>
+      <p>web ini di buat untuk menghitung luas segitiga dan juga keliling segitiga</p>
+      <img src="segitiga.png" alt="Gambar Segitiga">
+    </section>
+
+    <section>
+        <h2>Hitung Luas Segitiga</h2>
+        <h4>RUMUS</h4>
+        <p>Luas segitiga = (a x t) ÷ 2
+          <br>a = alas
+          <br>t = tinggi
+        </p>
+        <form id="luasForm">
+            <label for="alas">Alas: </label>
+            <input type="number" id="alas" name="alas" required><br><br>
+            
+            <label for="tinggi">Tinggi: </label>
+            <input type="number" id="tinggi" name="tinggi" required><br><br>
+            
+            <button type="submit">Hitung Luas</button>
+            <button type="button" id="resetLuas">Reset</button>
+        </form>
+        <p>Luas Segitiga: <span id="luas"></span></p>
+    </section>
+
+    <section>
+        <h2>Hitung Keliling Segitiga</h2>
+        <h4>RUMUS</h4>
+        <p>Keliling segitiga = A + B + C
+          <br>A = Sisi 1
+          <br>B = Sisi 2
+          <br>C = Sisi 3
+        </p>
+        <form id="kelilingForm">
+            <label for="sisi1">Sisi 1: </label>
+            <input type="number" id="sisi1" name="sisi1" required><br><br>
+            
+            <label for="sisi2">Sisi 2: </label>
+            <input type="number" id="sisi2" name="sisi2" required><br><br>
+            
+            <label for="sisi3">Sisi 3: </label>
+            <input type="number" id="sisi3" name="sisi3" required><br><br>
+            
+            <button type="submit">Hitung Keliling</button>
+            <button type="button" id="resetKeliling">Reset</button>
+        </form>
+        <p>Keliling Segitiga: <span id="keliling"></span></p>
+    </section>
+</main>
+    <footer>
+        <p>Hak Cipta © 2023 Ahmad Hidayatul Kabir Ali. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
